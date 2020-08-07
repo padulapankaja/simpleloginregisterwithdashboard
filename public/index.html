@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <base href="/" />
+  <head>
+    <meta charset="utf-8" />
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+   
+   
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Sensor Dashboard</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full" data-sidebar-position="fixed" data-header-position="absolute" data-boxed-layout="full">
+    <div id="root" style="background-color: #eef5f9 !important;"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.0.js" 
+    integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" 
+    crossorigin="anonymous">
+    </script>
+   
+    <script  type="text/jsx"  src="./js/popper.min.js"></script>
+    <script type="text/jsx"  src="./js/bootstrap.min.js"></script>
+    <script type="text/jsx"  src="./js/app-style-switcher.js"></script>
+
+    <!--Menu sidebar -->
+    <script type="text/jsx"  src="./js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script type="text/jsx"  src="./js/custom.js"></script>
+  </body>
+</html>
