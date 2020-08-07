@@ -4,7 +4,7 @@ import Dashboard from '../components/App';
 // import Login
 import Login from '../views/Admin/Login'
 import Register from '../views/Admin/Register'
-
+import Side from '../views/Sidebar'
 
 let ProtectedindexRoutes = [
     {
@@ -20,9 +20,9 @@ let ProtectedindexRoutes = [
         component: Register,
       },
     {
-        path: "/dashboard",
-        name: "Dashboard",
-        component: Dashboard,
+        path: "/side",
+        name: "Side",
+        component: Side,
         exact: true,
     },
 

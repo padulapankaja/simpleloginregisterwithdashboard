@@ -8,7 +8,7 @@ import { Line as LineChart } from 'react-chartjs-2';
 import DATA from '../util/env'
 import moment from 'moment'
 import { Link } from "react-router-dom";
-
+import AdminSidebar from '../views/Sidebar'
 
 class Dashboard extends React.Component {
 
@@ -57,14 +57,12 @@ class Dashboard extends React.Component {
             })
     }
 
-    componentWillUnmount() {
-        clearInterval(this._interval);
-    }
-
+    
     render() {
         const { sensors, labels, co2, smoke } = this.state;
         return (
             <>
+            <AdminSidebar/>
             {/* <Topbar/>
             <Sidebar/>
             <div className="page-wrapper pt-4">
