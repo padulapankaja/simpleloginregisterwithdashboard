@@ -81,12 +81,12 @@ class Register extends Component {
     // ---------------------------------------- render functions ----------------------------------------
     render() {
         return (
-            <>
+            <div className="container-fluid backgrRR">
                                 <TopBar/>
 
                 <div className="wrapper bg-darks" >
-                    <div className="container bg-light ">
-                        <div className="row mt-5">
+                    <div className="container  "style={{height:'96.4vh'}}>
+                        <div className="row mt-4">
                             <div className="col-sm-8 col-md-8  mx-auto mt-5">
                                 <div className="card card-signin my-5  shadow">
                                     <div className="card-body">
@@ -146,7 +146,7 @@ class Register extends Component {
                         </div>
                     </div>
                 </div>
-            </>
+            </div>
         );
     }
 }

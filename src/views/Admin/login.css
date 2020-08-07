@@ -12,6 +12,9 @@
     font-size: 12px;
 }
 
+
 .backgrRR{
-  background: url('../../asserts/back.webm');
+  background-image: url('../../asserts/abstract-communication-technology-network-concept_34629-641.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }

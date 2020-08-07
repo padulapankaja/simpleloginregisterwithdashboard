@@ -10,7 +10,6 @@ import './login.css'
 
 import TopBar from '../../components/topbar/Topbar'
 
-import vid from '../../asserts/back.webm'
 class Login extends Component {
     constructor() {
         super();
@@ -82,14 +81,14 @@ class Login extends Component {
     // ---------------------------------------- render functions ----------------------------------------
     render() {
         return (
-            <>
+            <div className="container-flex backgrRR"  >
                 {/* <video className='videoTag' autoPlay loop muted> */}
-                    {/* <source src={vid} type='video/mp4' /> */}
-                    {/* </video> */}
-                    <TopBar/>
-                <div className="wrapper  w-100 bg-darks backgrRR" style={{backgroundImage:'../../asserts/back.webm'}}>
-                    <div className="container bg-light">
-                        <div className="row mt-5">
+                {/* <source src={vid} type='video/mp4' /> */}
+                {/* </video> */}
+                <TopBar/>
+                <div className="wrapper  w-100 bg-darks " style={{backgroundImage:'../../asserts/abstract-communication-technology-network-concept_34629-641.jpg'}}>
+                    <div className="container" style={{height:'96.4vh'}}>
+                        <div className="row mt-4">
                             <div className="col-sm-8 col-md-5  mx-auto mt-5">
                                 <div className="card card-signin my-5  shadow">
                                     <div className="card-body">
@@ -119,8 +118,19 @@ class Login extends Component {
                         </div>
                     </div>
                 </div>
-               
-            </>
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
         );
     }
 }
