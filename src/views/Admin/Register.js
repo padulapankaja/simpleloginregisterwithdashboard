@@ -7,6 +7,7 @@ import Topbar from '../../components/Topbar';
 
 // imporrt css
 import './login.css'
+import TopBar from '../../components/topbar/Topbar'
 
 
 class Register extends Component {
@@ -81,6 +82,8 @@ class Register extends Component {
     render() {
         return (
             <>
+                                <TopBar/>
+
                 <div className="wrapper bg-darks" >
                     <div className="container bg-light ">
                         <div className="row mt-5">

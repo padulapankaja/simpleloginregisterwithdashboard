@@ -8,7 +8,9 @@ import Topbar from '../../components/Topbar';
 // imporrt css
 import './login.css'
 
+import TopBar from '../../components/topbar/Topbar'
 
+import vid from '../../asserts/back.webm'
 class Login extends Component {
     constructor() {
         super();
@@ -81,38 +83,43 @@ class Login extends Component {
     render() {
         return (
             <>
-            <div className="wrapper  w-100 bg-darks" >
-                <div className="container bg-light ">
-                    <div className="row mt-5">
-                        <div className="col-sm-8 col-md-5  mx-auto mt-5">
-                            <div className="card card-signin my-5  shadow">
-                                <div className="card-body">
-                                    <h5 className="card-title text-center">Sign In</h5>
-                                    <form className="form-signin" onSubmit={(e) => this.OnSignIn(e)}>
-                                        <div className="form-label-group">
-                                            <label >Email address</label>
-                                            <input type="email" id="inputEmail" className="form-control" name="uEmail" placeholder="Email address" required autoFocus onChange={(e) => this.onChangeEmail(e)} />
-                                        </div>
+                {/* <video className='videoTag' autoPlay loop muted> */}
+                    {/* <source src={vid} type='video/mp4' /> */}
+                    {/* </video> */}
+                    <TopBar/>
+                <div className="wrapper  w-100 bg-darks backgrRR" style={{backgroundImage:'../../asserts/back.webm'}}>
+                    <div className="container bg-light">
+                        <div className="row mt-5">
+                            <div className="col-sm-8 col-md-5  mx-auto mt-5">
+                                <div className="card card-signin my-5  shadow">
+                                    <div className="card-body">
+                                        <h5 className="card-title text-center">Sign In</h5>
+                                        <form className="form-signin" onSubmit={(e) => this.OnSignIn(e)}>
+                                            <div className="form-label-group">
+                                                <label >Email address</label>
+                                                <input type="email" id="inputEmail" className="form-control" name="uEmail" placeholder="Email address" required autoFocus onChange={(e) => this.onChangeEmail(e)} />
+                                            </div>
 
-                                        <div className="form-label-group">
-                                            <label >Password</label>
-                                            <input type="password" id="inputPassword" className="form-control" name="uPass" placeholder="Password" required onChange={(e) => this.onChangePassword(e)} />
-                                        </div>
-                                        <hr className="my-4"></hr>
-                                        <button className="btn btn-md btn-secondary btn-block text-uppercase" type="submit">Sign in</button>
-                                   
-                                   
-                                        <div className="form-label-group">
-                                            <br />
-                                            <label >Don't have an account? <Link to="/register" style={{color:'#6c757d'}}> Sign Up</Link></label>
-                                        </div>
-                                    </form>
+                                            <div className="form-label-group">
+                                                <label >Password</label>
+                                                <input type="password" id="inputPassword" className="form-control" name="uPass" placeholder="Password" required onChange={(e) => this.onChangePassword(e)} />
+                                            </div>
+                                            <hr className="my-4"></hr>
+                                            <button className="btn btn-md btn-secondary btn-block text-uppercase" type="submit">Sign in</button>
+
+
+                                            <div className="form-label-group">
+                                                <br />
+                                                <label >Don't have an account? <Link to="/register" style={{ color: '#6c757d' }}> Sign Up</Link></label>
+                                            </div>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+               
             </>
         );
     }
