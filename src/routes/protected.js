@@ -1,5 +1,5 @@
 
-import Dashboard from '../views/Dashboard';
+import Dashboard from '../components/App';
 
 // import Login
 import Login from '../views/Admin/Login'

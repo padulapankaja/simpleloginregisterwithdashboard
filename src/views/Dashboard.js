@@ -65,7 +65,7 @@ class Dashboard extends React.Component {
         const { sensors, labels, co2, smoke } = this.state;
         return (
             <>
-            <Topbar/>
+            {/* <Topbar/>
             <Sidebar/>
             <div className="page-wrapper pt-4">
                 <div className="page-breadcrumb">
@@ -172,7 +172,7 @@ class Dashboard extends React.Component {
                         </div>
                     </div>
                 </div>
-                </div>
+                </div> */}
             </>
         );
     }
